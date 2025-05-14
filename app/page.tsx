@@ -152,10 +152,50 @@ export default function Home() {
         <section id="projects" className="py-16 scroll-mt-20">
           <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow-sm">
+              <div className="h-48 bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                <img
+                  src="/Screenshot_20250514_194101.png?height=192&width=384"
+                  alt="AURA"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold">AURA (Atificial Understanding of Research Articles)</h3>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Apr 2025 – Present</div>
+                </div>
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">FAISS</Badge>
+                    <Badge variant="outline">LangChain</Badge>
+                    <Badge variant="outline">Gemini API</Badge>
+                    <Badge variant="outline">RAG</Badge>
+                  </div>
+                </div>
+                <ul className="list-disc pl-5 space-y-2 mb-6">
+                  <li>Built a modular Retrieval-Augmented Generation system for answering questions over uploaded research papers.</li>
+                  <li>Used FAISS for vector-based retrieval, with retrieval and generation logic decoupled across clean scripts.</li>
+                  <li>Integrated Gemini Pro API to generate concise, accurate answers grounded in the source documents.</li>
+                  <li>Currently supports multi-paper querying with dynamic metadata tracking and paper management.</li>
+                </ul>
+                <Button asChild variant="outline" className="w-full">
+                  <Link
+                    href="https://aura-vdhkcheems.streamlit.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on Streamlit
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
             <div className="border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow-sm">
               <div className="h-48 bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
                 <img
-                  src="/placeholder.svg?height=192&width=384"
+                  src="/Screenshot_20250514_194953.png?height=192&width=384"
                   alt="Automated Essay Scorer"
                   className="object-cover w-full h-full"
                 />
@@ -203,7 +243,7 @@ export default function Home() {
             <div className="border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow-sm">
               <div className="h-48 bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
                 <img
-                  src="/placeholder.svg?height=192&width=384"
+                  src="Screenshot_20250514_195033.png?height=192&width=384"
                   alt="Life Bridge"
                   className="object-cover w-full h-full"
                 />
