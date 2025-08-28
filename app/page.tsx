@@ -101,12 +101,12 @@ export default function Home() {
             <div className="space-y-4 text-lg">
               <p>
                 I'm an Engineering student at Netaji Subhas University of Technology with a
-                strong passion for AI and Machine Learning. Currently maintaining a CGPA of 8.7/10, I'm dedicated to
+                strong passion for AI and Machine Learning. Currently maintaining a CGPA of 8.6/10, I'm dedicated to
                 applying my technical skills to solve real-world problems.
               </p>
               <p>
-                As a Research Assistant on an Automatic Exam Grading Project and a Machine Learning Mentor at Google
-                Developers Student Club, I've developed expertise in NLP, deep learning, and various ML frameworks. I'm
+                As a Data Science and Applied AI intern at a startup and a Machine Learning Mentor at Google
+                Developers Student Club, I've developed expertise in Data Science, NLP, LLMs, deep learning, and various ML frameworks. I'm
                 particularly interested in developing AI systems that can understand and evaluate human language.
               </p>
               <p>
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="border rounded-lg p-6 mb-8 bg-white dark:bg-gray-900 shadow-sm">
               <div className="flex flex-col md:flex-row md:justify-between mb-4">
-                <h3 className="text-xl font-bold">Research Assistant — Automatic Exam Grading Project</h3>
+                <h3 className="text-xl font-bold">Data Science and Applied AI intern</h3>
                 <div className="text-gray-600 dark:text-gray-400">Mar 2025 – Present</div>
               </div>
               <div className="text-gray-600 dark:text-gray-400 mb-4">
@@ -131,18 +131,19 @@ export default function Home() {
               </div>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  Collaborated with other students under a faculty mentor to build an LLM-powered exam evaluation system
-                  that simulates human grading using predefined marking schemes and relevant theory.
+                Engineered a derived dataset by aggregating insights from 1M+ records across 5 casting-related datasets,
+                enabling hedge funds and investment firms to extract monetizable trends.
                 </li>
                 <li>
-                  Developed a scoring pipeline (chunk extractor, score assigner, calculator) to assign marks and
-                  generate explainable feedback.
+                Built an LLM-driven fact extraction pipeline using few-shot prompting via OpenRouter
+                to identify business signals from unstructured data.
                 </li>
                 <li>
-                  Ensured output grounding by restricting the LLM to only provided inputs, minimizing bias and
-                  hallucinations.
+                Designed and optimized retrieval pipelines with Qdrant collections with 2k+ data points
+                implementing dense, sparse, and hybrid search methods to enable scalable, high-precision information retrieval.
                 </li>
-                <li>Simulated real-world workflow with flagging, rechecking, and human-in-loop components.</li>
+                <li>Leveraged Python, Pandas, Huggingface Transformers, Openrouter, Qdrant to preprocess and transform raw data into high-signal investment intelligence and
+                  also handle retrieval functionalities in production codebase.</li>
               </ul>
             </div>
           </div>
@@ -363,6 +364,7 @@ export default function Home() {
             <div className="border rounded-lg p-6 bg-white dark:bg-gray-900 shadow-sm">
               <h3 className="text-xl font-bold mb-4">Machine Learning</h3>
               <div className="flex flex-wrap gap-2">
+              <Badge className="bg-blue-600 hover:bg-blue-700">RAG</Badge>
                 <Badge className="bg-blue-600 hover:bg-blue-700">NLP</Badge>
                 <Badge className="bg-blue-600 hover:bg-blue-700">Data Visualization</Badge>
                 <Badge className="bg-blue-600 hover:bg-blue-700">Classical Models</Badge>
@@ -381,6 +383,8 @@ export default function Home() {
                 <Badge className="bg-blue-600 hover:bg-blue-700">Jupyter Notebook</Badge>
                 <Badge className="bg-blue-600 hover:bg-blue-700">VS Code</Badge>
                 <Badge className="bg-blue-600 hover:bg-blue-700">Linux</Badge>
+                <Badge className="bg-blue-600 hover:bg-blue-700">OpenRouter</Badge>
+                <Badge className="bg-blue-600 hover:bg-blue-700">Qdrant</Badge>
               </div>
             </div>
 
